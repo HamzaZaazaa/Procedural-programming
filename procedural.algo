@@ -1,0 +1,30 @@
+onction ortho 
+ALGORITHM produitscal
+VAR
+    vec1,vec2 : ARRAY_OF INTEGER[50];
+
+BEGIN
+
+ IF (vecProduit(vec1,vec2)=0) THEN
+                  write ("vec 1 et vec 2 sont  orthogoneaux")
+
+            ELSE
+                 write("vec 1 et vec 2 ne  sont pas  orthogoneaux")
+
+            END_IF
+
+END
+
+  FUNCTION vecProduit(vec1,vec2) : INTEGER
+    VAR
+        sum,i:INTEGER
+    BEGIN
+    sum=0;
+
+                 FOR i FROM 0 TO vec1.length -1 STEP 1  DO
+                      sum=sum+(vec1[i]*vec2[i])
+                 END_FOR
+
+            return  sum
+
+    END

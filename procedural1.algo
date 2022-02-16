@@ -1,0 +1,15 @@
+ALGORITHM orto
+VAR
+    v1,v2 = ARRAY_OF INTEGER
+    sum: INTEGER := 0
+BEGIN
+     IF (vecProduit(vec1,vec2)=0) THEN
+                  write ("vec 1 et vec 2 sont  orthogoneaux")
+
+            ELSE
+                 write("vec 1 et vec 2 ne  sont pas  orthogoneaux")
+    END_IF
+    p-v (v1,v2, sum)
+    
+
+END
